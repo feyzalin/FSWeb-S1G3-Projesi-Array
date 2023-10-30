@@ -40,8 +40,9 @@ Aşağıdakileri yapmak için aşağıdaki kopyalama işlevini kullanın:
 */
 
 
-function kopyala(/*kod buraya*/){
-  /*kod buraya*/
+function kopyala(dizi){
+  const kopyaDizi = [...dizi];
+  return kopyaDizi;
 }
 
 
@@ -56,8 +57,8 @@ Bir dizinin tam olarak 25 çeşit olduğunu onaylayın. İşleviniz şunları ka
 */
 
 
-function dizi25Cesitmi(/*kod buraya*/){
-  /*kod buraya*/
+function dizi25Cesitmi(tatlar) {
+  return tatlar === 25;
 }
 
 
@@ -74,10 +75,10 @@ Aşağıdakileri yapmak için cesitEkle işlevini kullanın:
 */
 
 
-function cesitEkle(/*kod buraya*/){
-  /*kod buraya*/
+function cesitEkle(tatlar, yeniTat) {
+  tatlar.unShift(yeniTat);
+  return tatlar;
 }
-
 
 /* Cörev 4:
 
@@ -92,8 +93,9 @@ Aşağıdakileri yapmak için sonCesitiKaldir işlevini kullanın:
 */
 
 
-function sonCesitiKaldir(/*kod buraya*/){
-  /*kod buraya*/
+function sonCesitiKaldir(tatlar){
+  tatlar.pop();
+  return tatlar;
 }
 
 
@@ -251,4 +253,3 @@ module.exports = {
   ortalamaKelimeSayisi,
   rastgeleTatlar
 }
-
